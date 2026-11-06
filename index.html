@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yahav Ben-Shoan — Data Leader</title>
+<meta name="description" content="Yahav Ben-Shoan: 10+ years building KPI frameworks, semantic layers and dashboards teams actually trust.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f4ef; --ink:#16181d; --muted:#5d6370; --line:#dcd8cf;
+    --card:#ffffff; --accent:#1f6f5c; --accent-soft:#e3efe9; --warn:#b4532a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  .mono{font-family:"IBM Plex Mono",monospace}
+
+  header{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  h1{font-family:Fraunces,serif;font-weight:700;font-size:clamp(40px,7vw,68px);line-height:1.02;margin:14px 0 20px;letter-spacing:-.02em}
+  .lede{font-size:19px;max-width:680px;color:#2b2f36}
+  .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .btn{display:inline-block;padding:10px 16px;border:1px solid var(--ink);border-radius:6px;text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+  .btn.primary{background:var(--ink);color:var(--bg)}
+  .btn:hover{opacity:.85}
+
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h2{font-family:Fraunces,serif;font-weight:500;font-size:30px;margin-bottom:8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin-bottom:28px;max-width:640px}
+
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .fact{background:var(--card);padding:22px}
+  .fact .n{font-family:Fraunces,serif;font-size:38px;font-weight:700;line-height:1;color:var(--accent)}
+  .fact p{margin-top:10px;font-size:14.5px;color:#30343b}
+
+  .do{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .do div{border-left:3px solid var(--accent);padding:4px 0 4px 16px}
+  .do h3{font-size:16px;font-weight:600;margin-bottom:4px}
+  .do p{font-size:15px;color:var(--muted)}
+
+  /* dashboard */
+  .dash{background:#111418;color:#e8e6e1;border-radius:12px;padding:24px;margin-top:8px}
+  .dash-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .dash-head .t{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#9aa3ad}
+  .live{font-family:"IBM Plex Mono",monospace;font-size:12px;color:#7fd1b5}
+  .live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#7fd1b5;margin-right:6px;vertical-align:1px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+  .kpi{background:#1a1f25;border-radius:8px;padding:14px}
+  .kpi .l{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:#8b949e;text-transform:uppercase;letter-spacing:.06em}
+  .kpi .v{font-size:26px;font-weight:600;margin-top:4px}
+  .pos{color:#7fd1b5}.neg{color:#f0a07c}
+  #chart{width:100%;height:260px;display:block}
+  .empty{font-family:"IBM Plex Mono",monospace;font-size:14px;color:#8b949e;padding:40px 0;text-align:center}
+  .note{font-size:14px;color:var(--muted);margin-top:14px}
+
+  .more{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:var(--accent-soft);border-radius:10px;padding:24px}
+  .more p{max-width:560px}
+
+  footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Data leader · 10+ years · West Orange, NJ</div>
+    <h1>Yahav Ben-Shoan</h1>
+    <p class="lede">I turn messy data into KPI frameworks, governed models and dashboards that teams actually trust, and I follow the analysis through to a shipped change instead of stopping at the report.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:y.benshoan@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/yahav-benshoan" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="#bot">See a live project ↓</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Quick facts</h2>
+    <p class="sub">Recently I've been building semantic layers so people across a company can analyze data with their own AI agents.</p>
+    <div class="facts">
+      <div class="fact"><div class="n">0→1</div><p>Rebuilt AWeber's analytics function from the ground up: audited legacy reporting, then built a governed semantic layer and modern data stack.</p></div>
+      <div class="fact"><div class="n">5</div><p>Analysts led and mentored as Lead Data Analyst and interim manager at Dashlane.</p></div>
+      <div class="fact"><div class="n">20+</div><p>Tested, PR-reviewed dbt models built as the single source of truth for B2B metrics.</p></div>
+      <div class="fact"><div class="n">37%</div><p>Drop in trial conversion traced and fixed, carrying a data finding through to a shipped product change.</p></div>
+      <div class="fact"><div class="n">4–5×</div><p>Analytics throughput gained using AI-assisted and agentic workflows.</p></div>
+      <div class="fact"><div class="n">14</div><p>Properties run hands-on: my own portfolio of 4 (5 doors), plus 10 more for family and friends.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How I work</h2>
+    <p class="sub">I'd rather own the whole pipeline than hand off a query.</p>
+    <div class="do">
+      <div><h3>Own the platform</h3><p>Audit legacy systems, design governed semantic layers, and build the path from data capture to visualization.</p></div>
+      <div><h3>Model with discipline</h3><p>dbt models with tests and macros, all PR-reviewed.</p></div>
+      <div><h3>Turn unstructured data into signal</h3><p>For example, converting raw sales-call recordings into structured scoring with AI.</p></div>
+      <div><h3>Define KPIs with the people who use them</h3><p>Agree on definitions together with stakeholders, then follow findings through to action.</p></div>
+      <div><h3>Build for self-serve</h3><p>Tableau and BI dashboards, and now semantic layers for AI agents, so teams can answer their own questions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="bot">
+  <div class="wrap">
+    <h2>Side project: a prediction-market trading bot</h2>
+    <p class="sub">An automated strategy trading live sports markets, plus the statistical tracking layer I built to tell whether it's actually working or just getting lucky.</p>
+    <div class="dash">
+      <div class="dash-head"><span class="t">bot_performance · cumulative P&amp;L</span><span class="live" id="updated">loading…</span></div>
+      <div class="kpis" id="kpis"></div>
+      <svg id="chart" viewBox="0 0 800 260" preserveAspectRatio="none" aria-label="Cumulative profit and loss chart"></svg>
+    </div>
+    <p class="note">Figures come from the bot's own trade log (<span class="mono">data/bot.json</span>).</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="more">
+      <p><strong>Want the deeper work?</strong> My full portfolio has more analyses and write-ups, including my real estate investments.</p>
+      <a class="btn primary" href="https://temporal-toque-77d.notion.site/Yahav-Ben-Shoan-Analytics-Portfolio-3d8864ff3d1780c99471dcd98b73423d" target="_blank" rel="noopener">Open the full portfolio →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Yahav Ben-Shoan · <a href="mailto:y.benshoan@gmail.com">y.benshoan@gmail.com</a> · Hebrew &amp; English</div>
+</footer>
+
+<script>
+// Expected data/bot.json shape:
+// { "updated": "2026-11-06", "trades": [ { "date": "2026-10-01", "pnl": 12.5 }, ... ] }
+(async function(){
+  const svg = document.getElementById('chart'), kpis = document.getElementById('kpis'), upd = document.getElementById('updated');
+  let data;
+  try { const r = await fetch('data/bot.json', {cache:'no-store'}); if(!r.ok) throw 0; data = await r.json(); }
+  catch(e){ svg.outerHTML = '<div class="empty">Dashboard data not connected yet.</div>'; upd.textContent = 'offline'; return; }
+
+  const t = data.trades || [];
+  if(!t.length){ svg.outerHTML = '<div class="empty">No trades logged yet.</div>'; return; }
+  let cum = 0; const pts = t.map(d => (cum += d.pnl, {date:d.date, v:cum}));
+  const wins = t.filter(d => d.pnl > 0).length;
+  const fmt = v => (v<0?'−$':'$') + Math.abs(v).toLocaleString(undefined,{maximumFractionDigits:0});
+  const cls = v => v>=0 ? 'pos' : 'neg';
+  const k = [
+    ['Trades', t.length.toLocaleString(), ''],
+    ['Win rate', (100*wins/t.length).toFixed(1)+'%', ''],
+    ['Net P&L', fmt(cum), cls(cum)],
+    ['Avg / trade', fmt(cum/t.length), cls(cum)]
+  ];
+  if(data.roi != null) k.push(['ROI', (data.roi*100).toFixed(1)+'%', cls(data.roi)]);
+  kpis.innerHTML = k.map(([l,v,c]) => `<div class="kpi"><div class="l">${l}</div><div class="v ${c}">${v}</div></div>`).join('');
+  upd.textContent = 'updated ' + (data.updated || pts[pts.length-1].date);
+
+  const W=800,H=260,P=24, vs=pts.map(p=>p.v), lo=Math.min(0,...vs), hi=Math.max(0,...vs)||1;
+  const x=i=>P+(W-2*P)*(pts.length===1?0.5:i/(pts.length-1)), y=v=>H-P-(H-2*P)*(v-lo)/(hi-lo||1);
+  const line = pts.map((p,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(p.v).toFixed(1)).join(' ');
+  const area = line + ` L${x(pts.length-1)} ${y(0)} L${x(0)} ${y(0)} Z`;
+  svg.innerHTML = `
+    <line x1="${P}" x2="${W-P}" y1="${y(0)}" y2="${y(0)}" stroke="#3a424c" stroke-dasharray="4 4"/>
+    <path d="${area}" fill="#7fd1b5" opacity=".12"/>
+    <path d="${line}" fill="none" stroke="#7fd1b5" stroke-width="2.2" vector-effect="non-scaling-stroke"/>`;
+})();
+</script>
+</body>
+</html>
